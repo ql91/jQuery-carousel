@@ -30,4 +30,4 @@ jQuery(document).ready(function($) {
 });
 ```
 ## 效果图
-![](https://github.com/ql91/jQuery-summary/tree/master/carousels/Carousel.gif)
+![](https://github.com/ql91/jQuery-summary/blob/master/Carousel.gif)
