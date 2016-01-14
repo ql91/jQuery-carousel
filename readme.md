@@ -4,6 +4,7 @@
 ##使用方式
 > * 引入css: **carouselBox.css**<br/>
 > * 引入js: **jquery.js**、 **carouselBox.js**<br/>
+
 ####html代码:
 ```html
 <div class="caroselBox" id="demo1" >
