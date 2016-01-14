@@ -4,8 +4,8 @@
 ##使用方式
 > * 引入css: **carouselBox.css**<br/>
 > * 引入js: **jquery.js**、 **carouselBox.js**<br/>
-> * html代码:
-```
+#### html代码:
+```html
 <div class="caroselBox" id="demo1" >
         <div class="imgList">
             <div class="img"><a href="#"><img src="img/banner1.jpg" alt="图片一"></a></div>
@@ -17,8 +17,8 @@
         </div>
     </div>
 ```   
-> * js代码:
-```
+####js代码:
+```javascript
 jQuery(document).ready(function($) {
     // 设置参数
     $("#demo1").carouselBox({
