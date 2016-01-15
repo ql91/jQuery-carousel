@@ -100,8 +100,12 @@
           //左箭头点击处理
           $(".prev").click(function(){ 
             //根据curIndex进行上一个图片处理
-            curIndex = (curIndex > 0) ? (--curIndex) : (imgLen - 1);
-            changeTo(curIndex);
+            if(inOut == "switch" && curIndex == 0){
+              // 不做任何操作
+            }else{
+              curIndex = (curIndex > 0) ? (--curIndex) : (imgLen - 1);
+              changeTo(curIndex);
+            }
           });
           //右箭头滑入滑出事件处理
           $(".next").hover(function(){ 
@@ -113,8 +117,12 @@
           });
           //右箭头点击处理
           $(".next").click(function(){ 
-            curIndex = (curIndex < imgLen - 1) ? (++curIndex) : 0;
-            changeTo(curIndex);
+            if(inOut == "switch" && curIndex == imgLen - 1){
+              // 不做任何操作
+            }else{              
+              curIndex = (curIndex < imgLen - 1) ? (++curIndex) : 0;
+              changeTo(curIndex);
+            }
           });
           //对右下角按钮index进行事件绑定处理等
           $(".indexList").find("li").each(function(item){ 
