@@ -14,17 +14,15 @@
             infoArr = [];
         }
 
-        //根据获取到的盒子宽度高度设置盒子内的图片、提示信息的大小及位置
-        $(".caroselBox").css({"height":caroselBoxHeight,"width":caroselBoxWidth});
-        $(".imgList").css({"width": caroselBoxWidth, "height": caroselBoxHeight});
-        $(".imgList img").css({"width": caroselBoxWidth, "height": caroselBoxHeight});
+        //根据获取到的盒子宽度高度设置盒子内的图片、提示信息的大小及位置 
+        $(".caroselBox, .imgList, .imgList img").css({"height":caroselBoxHeight,"width":caroselBoxWidth});
+        //$(".imgList").css({"width": caroselBoxWidth, "height": caroselBoxHeight});
+        //$(".imgList img").css({"width": caroselBoxWidth, "height": caroselBoxHeight});
 
         // 图片切换左右键
-        var addCtrlHtml = '<div class="addCtrl">'
-                        + '<div class="prev"></div>'
-                        + '<div class="next"></div></div>';
-        // + '<div id="prev"><img class="arrowBtn" src="img/iconfont-arrowleftwhite.png" alt=""></div>'
-        // + '<div id="next"><img class="arrowBtn" src="img/iconfont-arrowrightwhite.png" alt=""></div></div>';
+        var addCtrlHtml = '<div class="addCtrl"> \
+                          <div class="prev"></div> \
+                          <div class="next"></div></div>';
 
         var footerHtml = '<div class="footer"></div>';
         
@@ -47,7 +45,7 @@
             }
         }
 
-        footerIndexLi += '</ul>';
+        footerInfoLi += '</ul>';
         footerIndexLi += '</ul>';
 
         $(".infoList").append(footerInfoLi);
