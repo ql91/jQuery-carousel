@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery实现图片轮播Plug-in</title>
+    <link rel="stylesheet" href="css/carouselBox.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/carouselBox.js"></script>
+    <style>
+    /*body{background-color: blue;}*/
+    </style>
+</head>
+<body>
+    <div class="caroselBox" id="demo1" >
+        <div class="imgList">
+            <div class="img"><a href="#"><img src="img/banner1.jpg" alt="图片一"></a></div>
+            <div class="img"><a href="#"><img src="img/banner2.jpg" alt="图片二"></a></div>
+            <div class="img"><a href="#"><img src="img/banner3.jpg" alt="图片三"></a></div>
+            <div class="img"><a href="#"><img src="img/banner1.jpg" alt="图片一"></a></div>
+            <div class="img"><a href="#"><img src="img/banner2.jpg" alt="图片二"></a></div>
+            <div class="img"><a href="#"><img src="img/banner3.jpg" alt="图片三"></a></div>
+        </div>
+    </div>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $("#demo1").carouselBox({
+                "infoArr": ['dsasda'], // 图片信息,若无则数组为空
+                "duration": "5000", // 自动切换时间 default:2500
+                "inOut": "fade", // fade:淡入淡出, switch:左右切换
+                "prevNext": true // 左右切换键是否显示,默认显示
+            });
+        });
+    </script>
+</body>
+</html>
