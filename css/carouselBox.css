@@ -1,0 +1,22 @@
+.caroselBox{width:800px;height:300px;margin:0 auto;background-color:none;position:relative;overflow:hidden}
+.imgList{width:2400px;height:300px;position:relative;overflow:hidden}
+.imgList div{float:left;display:inline;}/*position:absolute;*/
+.imgList img{width:800px;height:300px}
+/*.addCtrl{background-color: green;}*/
+/*.arrowBtn{width: 15px;height: 15px;line-height: 15px;position: absolute;}*/
+.prev{margin-left: 5px;width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent; 
+border-right:10px solid rgba(0,0,0,.2);top:100px;left:0;position:absolute;cursor:pointer}
+.next{margin-right: 5px;width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent; 
+border-left:10px solid rgba(0,0,0,.2);top:100px;right:0;position:absolute;cursor:pointer}
+.footer{width:100%;bottom:0;background-color:rgba(0,0,0,.2);position: absolute;}
+/*.infoList ul{float:left;}*/
+.indexList{float: right;}
+ul,li{margin: 0;padding:0;list-style:none;}
+.infoList{height:30px;width:50%;background-color: none;}
+.infoList li{float:left;display:none;margin-left: 10px;padding-top: 10px;}
+.indexList{height:30px;width:50%;background-color: none;}
+.infoList .infoOn{display:inline;color:#fff}
+.indexList li:first-child{margin-left: 300px;}
+.indexList li{float:left;border-radius:15px;width:20px;height:20px;background-color:rgba(0,0,0,.2);margin-left: 10px;
+   cursor:pointer;}
+.indexList .indexOn{background:#fff;font-weight:700;color:#fff}
